@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>LEARN JAVASCRIPT</h1>
+
+    <script>
+        // alert('hello it\'s afternoon already ' )
+        var number1 = 35;
+        var number2 = 23;
+        alert(number1 + number2);
+        var test = 'this is a lunch time';
+        var Test = 'this is still lunchtime';
+        alert(Test)
+        //   camel case
+        var MyFavouritenumber;
+        MyFavouritenumber = 3;
+        //    partial case
+        var MyFavouritenumber;
+        //   underscore
+        var my_Favourite_number;
+        var colors = ['blue', 'red', 'orange']
+        alert(colors[1]);
+
+        var colors = new Array('red', 'green', 'orange');
+        alert(colors[2]);
+        colors.push('yellow');
+        alert(colors[3]);
+
+        var numbers = [5, 67, 78, 89,];
+        alert(numbers[0] + numbers[2]);
+
+        var numbers = [5, 56, 34, 'five'];
+        alert(numbers[3]);
+
+
+        var numbers = [5, 56, 34, 'five'];
+        alert(numbers.length);
+
+        var numbers = [5, 56, 34, 'five'];
+        alert(numbers.sort());
+
+        var numbers = [5, 56, 34, 'five'];
+        alert(numbers.reverse());
+
+        // loops
+        console.log('hello');
+        for (var i = 0; i < 10; i++) {
+
+        }
+
+        for (var i = 0; i < 10; i++) {
+            console.log(1234);
+
+        }
+        for (var i = 0; i < 10; i++) {
+            console.log(i);
+        }
+
+        for (var i = 0; i < 10; i++) {
+            console.log('i love the number' + i);
+
+        }
+
+        var i = 0;
+        while (i < 10) {
+            console.log(i);
+            i++;
+        }
+        var numbers = [22, 34, 56, 78, 98,];
+        numbers.forEach(function (number) {
+            console.log(number);
+
+        })
+        var numbers = [23, 45, 67, 89, 24, 67, 56];
+        numbers.reverse();
+        for (var i = 0; i < numbers.length; i++) {
+            console.log(numbers[i]);
+        }
+        //   conditionals
+        if (1 == 1) {
+            console.log('this is true');
+        }
+        var var1 = 8;
+        var var2 = 3;
+        if (var1 != var2) {
+            console.log('this is true');
+
+        }
+
+        var var1 = 8;
+        var var2 = 3;
+        if (var1 == var2) {
+            console.log('this is true');
+        } else {
+            console.log('this is fasle');
+        }
+
+
+        var fruit = 'apple'
+        switch (fruit) {
+            case "banana":
+                alert('i love bananas');
+                break;
+            case "apple":
+                alert('l love apples');
+                break;
+            case "orange":
+                alert('oranges are acdic');
+            default:
+                alert('i love all other fruits');
+                break;
+        }
+        //  here whatever you put to the var fruit = 'name ov da friut'is what u will c
+
+        // objects
+        // frist is object  literal
+        var person = {
+            fristName: 'jenny',
+            lastName: 'zawal',
+            age: 21,
+        }
+        console.log(person.fristName);
+        // we are not limited with wat to put in here
+        var person = {
+            fristName: 'jenny',
+            lastName: 'zawal',
+            age: 21,
+        }
+        console.log(person.lastName);
+
+        // Object cunstructor
+        // var apple = new object();
+        // apple.color = 'red';
+        // apple.shape = 'round';
+
+        // apple.describe = function(){
+        //   return 'an apple is the color '+this.color+'and is the shape'+this.shape;
+        // };
+        // console.log(apple.described());its hard 
+        //   but there is another way by using contructor pattern
+
+        function Fruit(name, color, shape) {
+            this.name = name;
+            this.color = color;
+            this.shape = shape;
+            this.describe = function () {
+                return 'a' + this.name + 'is the color' + this.color + 'and is the shape' + thsi.shape;
+            }
+        }
+        var apple = new Fruit('apple', 'red', 'round', );
+        console.log(apple);
+
+        // arrays of objects
+        var users = [
+            {
+                name: 'Jenny Zawal',
+                age: 21,
+            },
+
+            {
+                name: 'Williams Albert',
+                age: 21,
+            },
+
+            {
+                name: 'Chary Mavins',
+                age: 21,
+            },
+
+        ];
+
+        console.log(users[0].name);
+
+        //  so now its the events
+
+
+        function doClick() {
+            alert('you clicked!');
+        }
+    </script>
+    <div class="container">
+        <button onclick="doClick() ">click Me</button>
+    </div>
+
+</body>
+
+</html>
